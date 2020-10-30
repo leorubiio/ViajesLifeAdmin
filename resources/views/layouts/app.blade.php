@@ -22,13 +22,14 @@
     
 </head>
 <body>
-    
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light shadow-sm">
-            <div class="container">
-                <a class="navbar-brand text-white" >
-                Viajes Life Admin
-                </a>
+
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center " style="height: 6rem; ">
+      <h1 class="logo mr-auto"><a href="index.html">Viajes Life</a></h1>
+        <img class="mr-auto" src="assets/img/LogoVL.png" alt="" style="height: 10rem ; width: 10rem;" >
+
+
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -74,10 +75,14 @@
                 </div>
             </div>
         </nav>
+        
 
         <main class="py-4">
             @yield('content')
         </main>
     </div>
+    
 </body>
+
 </html>
+</header
